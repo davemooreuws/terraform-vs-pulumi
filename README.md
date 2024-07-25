@@ -1,5 +1,45 @@
 <p align="center"><a href="https://nitric.io" target="_blank"><img src="https://raw.githubusercontent.com/nitrictech/nitric/main/docs/assets/nitric-logo.svg" height="120"></a></p>
 
+## Overview
+
+This demo showcases how to deploy an application to AWS using both Terraform and Pulumi with Nitric.
+
+## Terraform
+
+### Deploying
+
+```bash
+nitric up -s tf
+```
+
+This will generate a `cdktf.out` folder.
+
+```
+cd cdktf.out/stacks/demo-tf/
+terraform init
+terraform plan
+terraform apply
+```
+
+```bash
+cd cdktf.out/stacks/demo-tf/
+terraform destroy
+```
+
+## Pulumi
+
+### Deploying
+
+```bash
+nitric up -s pulumi
+```
+
+### Destroying
+
+```bash
+nitric down -s pulumi
+```
+
 ## About Nitric
 
 This is a [Nitric](https://nitric.io) TypeScript project, but Nitric is a framework for rapid development of cloud-native and serverless applications in many languages.

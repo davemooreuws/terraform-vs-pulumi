@@ -4,6 +4,11 @@
 
 This demo showcases how to deploy an application to AWS using both Terraform and Pulumi with Nitric.
 
+**The setup I used**
+
+- All necessary tools installed (Nitric, Docker, Pulumi and Terraform)
+- AWS credentials setup on the system
+
 ## Terraform
 
 ### Deploying
